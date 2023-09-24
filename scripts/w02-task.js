@@ -5,7 +5,7 @@
 /* Step 2 - Variables */
 var FullName = "Christyan Paul Bravo silva";
 var CurrentYear = new Date().getFullYear();
-var ProfilePicture = "image/profilepicture.png";
+var ProfilePicture = "images/profilepicture.png";
 
 
 
