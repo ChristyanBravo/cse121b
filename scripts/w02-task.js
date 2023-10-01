@@ -5,7 +5,7 @@
 /* Step 2 - Variables */
 let FullName = 'Christyan Paul Bravo Silva';
 let CurrentYear = new Date().getFullYear();
-let ProfilePicture = 'PATHWAY CHRISTYAN\cse121b\images\PictureProfile.jpg';
+let ProfilePicture = 'PATHWAY CHRISTYAN\cse121b\images\Pic.jpg';
 
 
 
@@ -14,7 +14,7 @@ let ProfilePicture = 'PATHWAY CHRISTYAN\cse121b\images\PictureProfile.jpg';
 const nameElement = document.getElementById('name');
 const foodElement = document.getElementById('food');
 const yearElement = document.querySelector('#year');
-let imageElement = document.querySelector("#PictureProfile");
+let imageElement = document.querySelector("#Pic");
 
 
 /* Step 4 - Adding Content */
@@ -25,16 +25,12 @@ imageElement.setAttribute("alt", `Profile image of ${FullName}`);
 
 
 
-
-
-
-
 /* Step 5 - Array */
 var favoriteFoods = [];
 
 foodElement.innerHTML = favoriteFoods.join(",");
 
-var singleFavoriteFood = "French Fries"; // 
+var singleFavoriteFood = "Burger";
 
 favoriteFoods.push(singleFavoriteFood);
 
