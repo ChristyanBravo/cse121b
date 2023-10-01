@@ -3,26 +3,25 @@
 /* Step 1 - Setup type tasks - no code required */
 
 /* Step 2 - Variables */
-var FullName = "Christyan Paul Bravo silva";
-var CurrentYear = new Date().getFullYear();
-var ProfilePicture = "images/profilepicture.png";
+let FullName = 'Christyan Paul Bravo Silva';
+let CurrentYear = new Date().getFullYear();
+let ProfilePicture = 'PATHWAY CHRISTYAN\cse121b\images\PictureProfile.jpg';
 
 
 
 
 /* Step 3 - Element Variables */
-const nameElement = document.getElementById("name");
-const foodElement = document.getElementById("food");
-const yearElement = document.querySelector("#year");
-const imageElement = document.getElementById("profileImage");
-
+const nameElement = document.getElementById('name');
+const foodElement = document.getElementById('food');
+const yearElement = document.querySelector('#year');
+let imageElement = document.querySelector("#PictureProfile");
 
 
 /* Step 4 - Adding Content */
-nameElement.innerHTML = '<strong>${FullName}</strong>';
+nameElement.innerHTML = `<strong>${FullName}</strong>`;
 yearElement.textContent = CurrentYear;
 imageElement.setAttribute('src', ProfilePicture);
-imageElement.setAttribute("alt", `Profile image of ${fullName}`);
+imageElement.setAttribute("alt", `Profile image of ${FullName}`);
 
 
 
