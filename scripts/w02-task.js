@@ -5,7 +5,7 @@
 /* Step 2 - Variables */
 let FullName = 'Christyan Paul Bravo Silva';
 let CurrentYear = new Date().getFullYear();
-let ProfilePicture = 'PATHWAY CHRISTYAN\cse121b\images\Pic.jpg';
+let ProfilePicture = 'C:\Users\LENOVO\Desktop\PATHWAY CHRISTYAN\cse121b\images\Pic.jpg';
 
 
 
