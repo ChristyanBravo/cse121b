@@ -4,7 +4,7 @@
 
 let myProfile = {
     name: "Christyan Bravo",
-    photo: "C:/Users/LENOVO/Desktop/PATHWAY CHRISTYAN/cse121b/images/Pic.jpg",
+    photo: "C:/Users/LENOVO/Desktop/PATHWAY CHRISTYAN/cse121b/images/Foto.jpg",
     favoriteFoods: ["Encebollado", "Ceviche", "Pollo a la Brasa", "Chaulafan", "Chicharron"],
     hobbies: ["Soccer", "Videogames", "Netflix"],
     placesLived: [],
@@ -13,19 +13,18 @@ let myProfile = {
 
 /* Populate Profile Object with placesLive objects */
 let newPlace = {
-    place: "Guayaquil",
-    length: "17 years"
+    place: "🏡 Guayaquil: ", length: "17 years"
 };
 myProfile.placesLived.push(newPlace);
 
 myProfile.placesLived.push({
-    place: "Salt Lake City",
-    length: "4 years"
+    place: "🏡 Salt Lake City: ", length: "4 years"
+
 });
 
 myProfile.placesLived.push({
-    place: "Peru",
-    length: "8 years"
+    place: "🏡 Peru: ", length: "8 years"
+    
 });
 /* DOM Manipulation - Output */
 
@@ -47,7 +46,7 @@ myProfile.favoriteFoods.forEach(food => {
 /* Hobbies List */
 myProfile.hobbies.forEach(hobby => {
     let li = document.createElement('li');
-    li.textContent = hobbies;
+    li.textContent = hobby;
     document.querySelector('#hobbies').appendChild(li);
   });
 
