@@ -45,9 +45,9 @@ myProfile.favoriteFoods.forEach(food => {
 
 
 /* Hobbies List */
-myProfile.hobbies.forEach(hobbies => {
+myProfile.hobbies.forEach(hobby => {
     let li = document.createElement('li');
-    li.textContent = hobby;
+    li.textContent = hobbies;
     document.querySelector('#hobbies').appendChild(li);
   });
 
