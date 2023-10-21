@@ -4,7 +4,7 @@
 
 let myProfile = {
     name: "Christyan Bravo",
-    photo: "C:\Users\LENOVO\Desktop\PATHWAY CHRISTYAN\cse121b\images\Pic.jpg",
+    photo: "C:/Users/LENOVO/Desktop/PATHWAY CHRISTYAN/cse121b/images/Pic.jpg",
     favoriteFoods: ["Encebollado", "Ceviche", "Pollo a la Brasa", "Chaulafan", "Chicharron"],
     hobbies: ["Soccer", "Videogames", "Netflix"],
     placesLived: [],
@@ -12,11 +12,12 @@ let myProfile = {
 };
 
 /* Populate Profile Object with placesLive objects */
-myProfile.placesLived.push(newPlace);
 let newPlace = {
     place: "Guayaquil",
     length: "17 years"
 };
+myProfile.placesLived.push(newPlace);
+
 myProfile.placesLived.push({
     place: "Salt Lake City",
     length: "4 years"
@@ -31,9 +32,9 @@ myProfile.placesLived.push({
 document.querySelector('#name').textContent = myProfile.name;/* Name */
 
 /* Photo with attributes */
-photoElement.src = myProfile.photo;
 
-let photoElement = document.querySelector('photo');
+let photoElement = document.querySelector('#photo');
+photoElement.src = myProfile.photo;
 
 /* Favorite Foods List*/
 myProfile.favoriteFoods.forEach(food => {
@@ -44,9 +45,9 @@ myProfile.favoriteFoods.forEach(food => {
 
 
 /* Hobbies List */
-myProfile.hobbies.forEach(food => {
+myProfile.hobbies.forEach(hobbies => {
     let li = document.createElement('li');
-    li.textContent = hobbies;
+    li.textContent = hobby;
     document.querySelector('#hobbies').appendChild(li);
   });
 
